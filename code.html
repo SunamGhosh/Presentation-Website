@@ -1,179 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding</title>
-    <link rel="stylesheet" href="./w3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Self-Learning</title>
+  <link rel="stylesheet" href="./w3.css">
+  <link rel="icon" href="./images/logo.jpg">
+  <style>
+    body {
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+    }
+
+    /* Title Section */
+    #coding {
+      color: white;
+      text-shadow: 2px 2px 5px #333;
+      letter-spacing: 1px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* Hero Image */
+    .hero {
+      width: 100%;
+      margin-top: -200px;
+      height: 450px;
+      object-fit: cover;
+      border-bottom: 5px solid #9c27b0;
+    }
+
+    /* Section Titles */
+    .section-title {
+      background: linear-gradient(90deg, #673ab7, #2196f3);
+      color: white;
+      padding: 10px 0;
+      border-radius: 50px;
+      width: 250px;
+      margin: 40px auto 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Section Background */
+    .section {
+      background: #e3f2fd;
+      border-radius: 12px;
+      margin: 20px auto;
+      padding: 30px 0;
+      width: 90%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+    }
+ .tech-css {
+      display: block;
+      margin: 50px auto 0;
+      width: 10%;
+      transition: transform 0.3s ease;
+    }
+    /* Image above each section */
+    .tech-img {
+      display: block;
+      margin: 50px auto 0;
+      transition: transform 0.3s ease;
+    }
+    .tech-img:hover {
+      transform: scale(1.1);
+    }
+
+    /* YouTube video layout */
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    iframe {
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    iframe:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .tech-img {
+        width: 60%;
+      }
+      iframe {
+        width: 90%;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
-<body style="background-color: cornsilk;">
-    <h1 class="w3-center w3-margin-top w3-purple w3-xxlarge w3-animate-top" id="coding" style="margin-bottom: -50px; "><b>Welcome to
-        the Coding World</b></h1>
 
-        <img src="./images/coding 2.png" width="100%" height="500px">
+<body>
+  <h1 id="coding" class="w3-center w3-animate-top w3-xxlarge w3-purple">
+    <b>Welcome to the Coding World</b>
+  </h1>
 
+  <img src="./images/coding 2.png" alt="Coding World" class="hero">
 
+  <!-- HTML Section -->
+  <img src="./images/HTML.png" alt="HTML" class="tech-img" width="20%">
+  <h1 class="section-title">HTML</h1>
+  <div class="section">
+    <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=0mIq-88b2El6qyVj" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/5ccq_nLHneE?si=b5i0asxskNhMXCIC" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=tNau89xxuLuzK5Hh" allowfullscreen></iframe>
+    </div>
+  </div>
 
+  <!-- CSS Section -->
+  <img src="./images/CSS.png" alt="CSS" class="tech-css" width="20%">
+  <h1 class="section-title" style="background: linear-gradient(90deg, #009688, #4caf50);">CSS</h1>
+  <div class="section">
+    <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=NIMUi2K9GUN3AWZd" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/MSICFljRcb4?si=N2lq2AkMh8ICOXe6" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=CUKF12aaTVJWEze8" allowfullscreen></iframe>
+    </div>
+  </div>
 
-        <img src="./images/HTML.png" alt="" class="w3-center w3-circle" height="200px" width="30%" style="margin-left: 500px; ">
-        <h1 class="w3-center" style="background-color: aqua;  border: 2px white solid; margin-top: -10px;"><b>HTML </b></h1>
-        <div class="w3-row w3-padding w3-light-blue" style="margin-top: -20px;">
-                
-            <div class="w3-col l4 w3-center w3-margin-right ">
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=0mIq-88b2El6qyVj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-    
-                <!-- <div class="w3-button w3-blue w3-center">
-                    <a href="https://swayam.gov.in">Learn More</a>
-    
-                </div> -->
-    
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://swayam.gov.in">Learn More</a></div> -->
-    
-            </div>
-    
-    
-    
-            <div class="w3-col l4 w3-center w3-margin-right ">
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/5ccq_nLHneE?si=b5i0asxskNhMXCIC" title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    
-    
-    
-                <!-- <div class="w3-button w3-blue w3-center">
-                    <a href="https://epathshala.nic.in">Learn More</a>
-    
-                </div> -->
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://epathshala.nic.in">Learn More</a></div> -->
-    
-            </div>
-    
-            <div class="w3-col l3 w3-center  w3-margin-right" >
-                
-                
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=tNau89xxuLuzK5Hh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <div class="w3-button w3-blue w3-center">
-                        <a href="
-                        https://unacademy.com" class="icon-span">
-                            Learn More
-                        </a>
-    
-                    </div> -->
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://unacademy.com">Learn More</a></div> -->
-    
-    
-    
-            </div>
+  <!-- JavaScript Section -->
+  <img src="./images/JS.png" alt="JavaScript" class="tech-img" width="20%">
+  <h1 class="section-title" style="background: linear-gradient(90deg, #f9a825, #f57f17);">JavaScript (JS)</h1>
+  <div class="section">
+    <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/ajdRvxDWH4w?si=n1ML0R5DLZeKGs3A" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/13gLB6hDHR8?si=l59i6YjHPZzESjP4" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/427pAhy9dI8?si=WJZT6PUVyXn5jxbn" allowfullscreen></iframe>
+    </div>
+  </div>
 
-          
-        </div>
+ <!-- ================= FOOTER ================= -->
+<footer class="w3-black w3-padding-64 w3-center w3-animate-bottom">
+  <div class="w3-row-padding">
 
+    <!-- About Section -->
+    <div class="w3-third w3-padding">
+      <h3 class="w3-text-yellow"><b>About Self-Learning</b></h3>
+      <p style="line-height: 1.6;">
+        Self-Learning is an online platform designed for college students to enhance their web development and programming skills. 
+        Learn HTML, CSS, JavaScript, and more — completely free.
+      </p>
+    </div>
 
-        <img src="./images/CSS.png" alt="" class="w3-center " height="200px" width="20%" style="margin-left: 600px; margin-top: 50px; ">
-        <h1 class="w3-center" style="background-color:antiquewhite;  border: 2px white solid; margin-top: 100px;"><b>CSS</b> </b></h1>
-        <div class="w3-row w3-padding w3-light-blue" style="margin-top: -20px;">
-            <div class="w3-col l4 w3-center w3-margin-right ">
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=NIMUi2K9GUN3AWZd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-                <!-- <div class="w3-button w3-blue w3-center">
-                    <a href="https://swayam.gov.in">Learn More</a>
-    
-                </div> -->
-    
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://swayam.gov.in">Learn More</a></div> -->
-    
-            </div>
-    
-    
-    
-            <div class="w3-col l4 w3-center w3-margin-right ">
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/MSICFljRcb4?si=N2lq2AkMh8ICOXe6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    
-    
-                <!-- <div class="w3-button w3-blue w3-center">
-                    <a href="https://epathshala.nic.in">Learn More</a>
-    
-                </div> -->
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://epathshala.nic.in">Learn More</a></div> -->
-    
-            </div>
-    
-            <div class="w3-col l3 w3-center  w3-margin-right" >
-                
-                
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=CUKF12aaTVJWEze8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <div class="w3-button w3-blue w3-center">
-                        <a href="
-                        https://unacademy.com" class="icon-span">
-                            Learn More
-                        </a>
-    
-                    </div> -->
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://unacademy.com">Learn More</a></div> -->
-    
-    
-    
-            </div>
+    <!-- Quick Links -->
+    <div class="w3-third w3-padding">
+      <h3 class="w3-text-yellow"><b>Quick Links</b></h3>
+      <p><a href="./indexonline.html" class="w3-text-white w3-hover-text-yellow"> Home</a></p>
+      <p><a href="#modules" class="w3-text-white w3-hover-text-yellow">Modules</a></p>
+      <p><a href="./code.html" class="w3-text-white w3-hover-text-yellow"> Coding World</a></p>
+      <p><a href="#about" class="w3-text-white w3-hover-text-yellow">About It</a></p>
+    </div>
 
-          
-        </div>
+    <!-- Contact / Social -->
+    <div class="w3-third w3-padding">
+      <h3 class="w3-text-yellow"><b>Contact</b></h3>
+      <p><i class="fa fa-envelope"></i>  sunamghosh05@gmail.com</p>
+     
+      <div class="w3-xlarge w3-section">
+        <a href="#" class="w3-hover-opacity"><i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="w3-hover-opacity"><i class="fa fa-youtube-play"></i></a>
+      </div>
+    </div>
+  </div>
 
-        <img src="./images/JS.png" alt="" class="w3-center " height="200px" width="20%" style="margin-left: 600px; margin-top: 50px; ">
-        <h1 class="w3-center" style="background-color:rgb(149, 227, 230);  border: 2px white solid; margin-top: 100px;"><b>JavaScript(JS)</b> </b></h1>
-        <div class="w3-row w3-padding w3-light-blue" style="margin-top: -20px;">
-            <div class="w3-col l4 w3-center w3-margin-right ">
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/ajdRvxDWH4w?si=n1ML0R5DLZeKGs3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <div class="w3-button w3-blue w3-center">
-                    <a href="https://swayam.gov.in">Learn More</a>
-    
-                </div> -->
-    
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://swayam.gov.in">Learn More</a></div> -->
-    
-            </div>
-    
-    
-    
-            <div class="w3-col l4 w3-center w3-margin-right ">
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/13gLB6hDHR8?si=l59i6YjHPZzESjP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    
-                <!-- <div class="w3-button w3-blue w3-center">
-                    <a href="https://epathshala.nic.in">Learn More</a>
-    
-                </div> -->
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://epathshala.nic.in">Learn More</a></div> -->
-    
-            </div>
-    
-            <div class="w3-col l3 w3-center  w3-margin-right" >
-                
-                
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/427pAhy9dI8?si=WJZT6PUVyXn5jxbn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <div class="w3-button w3-blue w3-center">
-                        <a href="
-                        https://unacademy.com" class="icon-span">
-                            Learn More
-                        </a>
-    
-                    </div> -->
-                <!-- <div class="w3-button w3-center w3-blue"><a href="https://unacademy.com">Learn More</a></div> -->
-    
-    
-    
-            </div>
+  <hr style="width:60%; margin:auto; border:1px solid gray">
 
-          
-        </div>
+  <p class="w3-small w3-margin-top">
+    © 2025 <b>Self-Learning</b>. All Rights Reserved. | Developed by <b>Sunam Ghosh</b>
+  </p>
+</footer>
+
 </body>
 </html>
